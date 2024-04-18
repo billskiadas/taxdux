@@ -1,0 +1,165 @@
+
+
+Global Styles
+:root {
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color:transparent;
+  -moz-tap-highlight-color:transparent;
+  -o-tap-highlight-color:transparent;
+  tap-highlight-color:transparent;
+  outline: none !important;
+}
+* {
+  -webkit-tap-highlight-color:transparent;
+  -moz-tap-highlight-color:transparent;
+  -o-tap-highlight-color:transparent;
+  tap-highlight-color:transparent;
+  outline: none !important;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.custom-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 100%;
+  margin: auto;
+}
+
+.logo-container {
+  border-radius: 8px;
+  background: #f5f5f5f5;
+  padding: 10px;
+  margin-right: 13px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 1rem; /* 14px */
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.email{
+  font-size: 0.8rem; /* 14px */
+  color: #555;
+}
+
+.password {
+  font-size:0.9rem
+}
+
+.arrow-icon {
+  color: #b0b0b0;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-responsive {
+  display: none;
+}
+
+/* Target the Menu component within .down-menu for horizontal layout */
+.down-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+/* Apply flex properties to the Menu within .down-menu */
+.down-menu .ant-menu {
+  display: flex !important;
+  width: 100% !important;
+  justify-content: center !important;
+  background-color: transparent !important; /* Optional: Adjust based on your theme */
+}
+
+/* Ensure menu items (.ant-menu-item) within .down-menu are centered */
+.down-menu .ant-menu-item {
+  flex: 1;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+  height: 100% !important; /* Adjust height as needed */
+}
+
+/* Adjust icon and text spacing within menu items if needed */
+.down-menu .ant-menu-item .anticon {
+  margin-right: 8px; /* Adjust the spacing between the icon and text if you have text */
+}
+
+
+
+
+@media(max-width: 1100px) {
+  .user-detail-responsive {
+    display: none !important;
+  }
+  .logo {
+    height: 4em; /* Adjust logo size for smaller screens */
+  }
+  .card {
+    padding: 1em; /* Reduce padding on smaller screens */
+  }
+  .responsive {
+    display: none;
+  }
+
+  .mobile-responsive {
+    display: block;
+  }
+
+  #root > div > div > header {
+    padding: 0 10px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    height: 4em; /* Adjust logo size for smaller screens */
+  }
+  .card {
+    padding: 1em; /* Reduce padding on smaller screens */
+  }
+  .responsive {
+    display: none;
+  }
+
+  .mobile-responsive {
+    display: block;
+  }
+
+  #root > div > div > header {
+    padding: 0 10px !important;
+  }
+
+
+}
